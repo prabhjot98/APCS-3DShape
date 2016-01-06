@@ -1,4 +1,4 @@
-package Project3D;
+//package Project3D;
 public interface ShapeMain{
 	public class Shape {
 		private static String ShapeName;
