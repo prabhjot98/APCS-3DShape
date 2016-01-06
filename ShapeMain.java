@@ -52,4 +52,55 @@ public interface ShapeMain{
 			return 2*length*width+(2*(length+width)*height);
 		}
 	}
+
+	public class Cylinder extends Shape {
+		public static int radius;
+		public static int height;
+		public static int getCircumference() {
+			return (int)(radius*2*Math.PI);
+		}
+		public static int getHeight() {
+			return height;
+		}
+		public static int getRadius() {
+			return radius;
+		}
+		public static int getDiameter() {
+			return radius*2;
+		}
+		public static int getBaseSurfaceArea() {
+			return (int)(radius*radius*Math.PI);
+		}
+		public static int getTotalSurfaceArea() {
+			return (int)((2*radius*radius*Math.PI) + (radius*2*Math.PI*height);
+		}
+		public static int getVolume() {
+			return (int)(radius*radius*Math.PI*height);
+		}
+	}
+
+	public class Cone extends Shape {
+		public static int radius;
+		public static int height;
+		public static int getBaseCircumference() {
+			return (int)(radius*2*Math.PI);
+		}
+		public static int getHeight() {
+			return height;
+		}
+		public static int getRadius() {
+			return radius;
+		}
+		public static int getDiameter() {
+			return radius*2;
+		}
+		public static int getBaseSurfaceArea() {
+			return (int)(radius*radius*Math.PI);
+		}
+		public static int getTotalSurfaceArea() {
+			return (int)(radius*radius*Math.PI) + (radius*Math.PI*Math.sqrt(height*height + radius*radius));
+		}
+		public static int getVolume() {
+			return (int)(radius*radius*Math.PI*height/3);
+		}
 }
