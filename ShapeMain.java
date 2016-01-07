@@ -89,7 +89,7 @@ public interface ShapeMain{
 		public static int getBaseSurfaceArea() {
 			return (int)(radius*radius*Math.PI);
 		}
-		public static int getTotalSurfaceArea() {
+		public static int getSurfaceArea() {
 			return (int)((2*radius*radius*Math.PI) + (radius*2*Math.PI*height));
 		}
 		public static int getVolume() {
@@ -119,7 +119,7 @@ public interface ShapeMain{
 		public static int getBaseSurfaceArea() {
 			return (int)(radius*radius*Math.PI);
 		}
-		public static int getTotalSurfaceArea() {
+		public static int getSurfaceArea() {
 			return (int)((radius*radius*Math.PI) + (radius*Math.PI*Math.sqrt(height*height + radius*radius)));
 		}
 		public static int getVolume() {
