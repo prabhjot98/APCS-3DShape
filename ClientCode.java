@@ -18,9 +18,9 @@ public class ClientCode {
 		System.out.println(test4.getSurfaceArea());
 		Cylinder test5 = new Cylinder(2,3);
 		System.out.println(test5.getVolume());
-		System.out.println(test5.getTotalSurfaceArea());
+		System.out.println(test5.getSurfaceArea());
 		Cone test6 = new Cone(2,3);
 		System.out.println(test6.getVolume());
-		System.out.println(test6.getTotalSurfaceArea());
+		System.out.println(test6.getSurfaceArea());
 	}
 }
